@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Roboto", sans-serif;
+   
+
+}
+.container{
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg,rgb(21, 8, 78), rgb(56, 15, 82));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.things{
+padding: 30px;
+border: solid;
+background:rgb(239, 238, 236);
+height: 50%;
+border-radius: 25px;
+
+
+
+
+}
+.row{
+    display:  flex;
+
+}
+input{
+    flex:1;
+    padding-left:10px ;
+    padding-bottom: px;
+    justify-self: center;
+    width: 90%;
+    height: 60px;
+    border-radius:30px ;
+    border: none;
+    box-shadow: 3px 2px 4px #666666;
+    outline: none;
+}
+button{
+    border: none;
+    padding: 10px;
+    background-color: blueviolet;
+    color: azure;
+    width: 100px; ;
+    height: 60px;
+    box-shadow: 3px 2px 4px #666666;
+    border-radius: 30px;
+    margin-left: -90px;
+}
+
+.container h1{
+    font-size: 80px;
+    align-self:baseline ;
+    
+}
+Ul li{
+    list-style: none;
+    font-size:20px;
+    padding: 12px 8px 12px 50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+
+
+}
+Ul li::before{
+content: '';
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background-image: url(img/unchecked-10-512.png);
+background-size: cover;
+background-position: center;
+top:12px;
+left: 8px;
+
+
+
+
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+
+}
+
+Ul li.checked::before{
+    background-image: url(img/checked.png);
+
+}
+Ul li span{
+position: absolute;
+right: 0;
+top: 5px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: #555;
+line-height:40px ;
+text-align: center;
+border-radius:50% ;
+
+}
+
+Ul li span:hover{
+background: #be2b2b;
+color: aliceblue;
+
+}
+
+@media(max-width: 768px){
+.container h1{
+    font-size: 60px;
+}
+
+input{
+    justify-self: center;
+    width: 90%;
+    height: 30px;
+    border-radius:25px ;
+    font-size: 12px;
+
+}
+button{
+    height: 30px;
+}
+}
+
+@media (max-width: 480px){
+    .things{
+        width: 100%;
+    }
+    .container h1{
+        font-size: 60px;
+    }
+
+    input{
+        justify-self: center;
+        width: 90%;
+        height: 30px;
+        border-radius:25px ;
+        font-size: 12px;
+    
+    }
+}
